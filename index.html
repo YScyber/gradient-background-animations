@@ -4,13 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradient background animations</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+    <style>
+        .box {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="linear"></div>
-        <div class="radial"></div>
-        <div class="conic"></div>
+    <section class="preview"></section>
+    <textarea class="playable playable-html" style="height: 50px;">
+<div class="box linear"></div>
+</textarea>
+    <textarea class="playable playable-css" style="height: 160px;">
+.linear {
+    background: linear-gradient(
+        -45deg,
+        rgba(139, 0, 118, 0.5) 25%,
+        rgb(139, 0, 118, 0.1) 25%,
+        rgb(139, 0, 118, 0.1) 50%,
+        rgb(139, 0, 118, 0.5) 50%,
+        rgb(139, 0, 118, 0.5) 75%,
+        rgb(139, 0, 118, 0.1) 75%,
+        rgb(139, 0, 118, 0.1));
+    background-size: 20px 20px;
+    animation: stripe 0.8s infinite linear;
+}
+
+@keyframes stripe {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -40px;
+    }
+}
+</textarea>
+    <div class="playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+        <input type="button" id="radial" value="放射アニメーションに変更" />
+        <input type="button" id="conic" value="扇形アニメーションに変更" />
     </div>
 </body>
 </html>
