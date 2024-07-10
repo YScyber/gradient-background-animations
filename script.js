@@ -14,8 +14,8 @@ function fillCode() {
     editable.innerHTML = textareaCSS.value;
 }
 
-const htmlRadial = `<div class="box radial"></div>`;
-const cssRadial = `.radial {
+const radialHtmlSolution = `<div class="box radial"></div>`;
+const radialCssSolution = `.radial {
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 255, 255, 0.1);
@@ -44,8 +44,8 @@ const cssRadial = `.radial {
 }
 `;
 
-const htmlConic = `<div class="box conic"></div>`;
-const cssConic = `.conic {
+const conicHtmlSolution = `<div class="box conic"></div>`;
+const conicCssSolution = `.conic {
     position: relative;
     overflow: hidden;
 }
@@ -72,11 +72,11 @@ const cssConic = `.conic {
 }
 `;
 
-let htmlRadialEntry = htmlRadial;
-let cssRadialEntry = cssRadial;
+let radialHtmlSolutionEntry = radialHtmlSolution;
+let radialCssSolutionEntry = radialCssSolution;
 
-let htmlConicEntry = htmlConic;
-let cssConicEntry = cssConic;
+let conicHtmlSolutionEntry = conicHtmlSolution;
+let conicCssSolutionEntry = conicCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
@@ -88,8 +88,8 @@ reset.addEventListener("click", () => {
 
 radial.addEventListener("click", () => {
     if (radial.value === "放射アニメーションに変更") {
-        textareaHTML.value = htmlRadialEntry;
-        textareaCSS.value = cssRadialEntry;
+        textareaHTML.value = radialHtmlSolutionEntry;
+        textareaCSS.value = radialCssSolutionEntry;
         radial.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -101,8 +101,8 @@ radial.addEventListener("click", () => {
 
 conic.addEventListener("click", () => {
     if (conic.value === "扇形アニメーションに変更") {
-        textareaHTML.value = htmlConicEntry;
-        textareaCSS.value = cssConicEntry;
+        textareaHTML.value = conicHtmlSolutionEntry;
+        textareaCSS.value = conicCssSolutionEntry;
         conic.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
