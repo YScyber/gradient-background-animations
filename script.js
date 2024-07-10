@@ -15,8 +15,6 @@ function fillCode() {
 }
 
 const htmlRadial = `<div class="box radial"></div>`;
-const htmlConic = `<div class="box conic"></div>`;
-
 const cssRadial = `.radial {
     position: relative;
     overflow: hidden;
@@ -45,6 +43,8 @@ const cssRadial = `.radial {
     }
 }
 `;
+
+const htmlConic = `<div class="box conic"></div>`;
 const cssConic = `.conic {
     position: relative;
     overflow: hidden;
@@ -73,8 +73,9 @@ const cssConic = `.conic {
 `;
 
 let htmlRadialEntry = htmlRadial;
-let htmlConicEntry = htmlConic;
 let cssRadialEntry = cssRadial;
+
+let htmlConicEntry = htmlConic;
 let cssConicEntry = cssConic;
 
 reset.addEventListener("click", () => {
