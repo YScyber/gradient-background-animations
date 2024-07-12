@@ -41,7 +41,8 @@ const radialCssSolution = `.radial {
         transform: scale(1, 1);
         opacity: 1;
     }
-}`;
+}
+`;
 
 const conicHtmlSolution = `<div class="box conic"></div>`;
 const conicCssSolution = `.conic {
@@ -68,7 +69,8 @@ const conicCssSolution = `.conic {
     to {
         transform: rotate(360deg);
     }
-}`;
+}
+`;
 
 let radialHtmlSolutionEntry = radialHtmlSolution;
 let radialCssSolutionEntry = radialCssSolution;
