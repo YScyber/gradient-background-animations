@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="script.js" type="text/javascript" defer></script>
     <style class="editable"></style>
-    <style>
-        div.box {
-            margin: 0 auto;
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
     <section class="preview"></section>
@@ -22,6 +14,14 @@
 <div class="box linear"></div>
 </textarea>
     <textarea class="playable playable-css" style="height: 160px;">
+div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
 div.linear {
     background: linear-gradient(
         -45deg,
