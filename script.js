@@ -15,7 +15,15 @@ function fillCode() {
 }
 
 const radialHtmlSolution = `<div class="box radial"></div>`;
-const radialCssSolution = `div.radial {
+const radialCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.radial {
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 255, 255, 0.1);
@@ -45,7 +53,15 @@ div.radial::before {
 `;
 
 const conicHtmlSolution = `<div class="box conic"></div>`;
-const conicCssSolution = `div.conic {
+const conicCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.conic {
     position: relative;
     overflow: hidden;
 }
